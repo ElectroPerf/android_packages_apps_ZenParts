@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/asus_rog"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/asus_rog" />
+
+    <LinearLayout
+        android:id="@+id/fragment_zen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

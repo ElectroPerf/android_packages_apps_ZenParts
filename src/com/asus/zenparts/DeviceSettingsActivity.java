@@ -28,14 +28,15 @@ public class DeviceSettingsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_zen);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
+        Fragment fragment = getFragmentManager().findFragmentById(R.id.fragment_zen);
         if (fragment == null) {
             mDeviceSettingsFragment = new DeviceSettings();
             getFragmentManager().beginTransaction()
-                    .add(android.R.id.content, mDeviceSettingsFragment)
+                    .add(R.id.fragment_zen, mDeviceSettingsFragment)
                     .commit();
         } else {
             mDeviceSettingsFragment = (DeviceSettings) fragment;
